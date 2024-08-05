@@ -1,0 +1,86 @@
+/* Base styles for mobile devices */
+body {
+    font-size: 16px;
+    background-color: #1a212a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid rgba(36,44,58,255);
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.6em;
+}
+
+p {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.green-border {
+    background-color: #112123;
+    border: 1px solid #2c9a95;
+    color: #2c9a95;
+    padding: 1px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.status {
+    padding: 1px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.status.online {
+    background-color: #111d2c;
+    color: #3c9ae8;
+    border-color: #3c9ae8;
+}
+
+.status.offline {
+    background-color: #2a1215;
+    color: red;
+    border-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: #2c9a95;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container {
+        border-radius: 20px;
+    }
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
