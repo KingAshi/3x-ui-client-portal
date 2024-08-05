@@ -6,6 +6,11 @@ is_port_in_use() {
   return $?
 }
 
+# Function to check if the input is a valid port number
+is_valid_port() {
+  [[ $1 =~ ^[0-9]+$ ]] && [ "$1" -ge 1 ] && [ "$1" -le 65535 ]
+}
+
 # Prompt the user for the port number
 while true; do
   read -p "Enter the port number to run the Flask app: " PORT
