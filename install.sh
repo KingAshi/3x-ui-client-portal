@@ -18,7 +18,7 @@ while true; do
 done
 
 # Define the URL of the repository or zip file containing the Flask app
-REPO_URL="https://github.com/yourusername/your-flask-app-repo/archive/refs/heads/main.zip"
+REPO_URL="https://github.com/KingAshi/3x-ui-client-portal/archive/refs/tags/v0.1.zip"
 APP_DIR="flask_app"
 
 # Create the directory for the Flask app files
