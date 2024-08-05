@@ -17,6 +17,10 @@ while true; do
   fi
 done
 
+# Install necessary packages
+sudo apt-get update
+sudo apt-get install -y python3 python3-pip python3-venv lsof curl unzip
+
 # Define the URL of the repository or zip file containing the Flask app
 REPO_URL="https://github.com/KingAshi/3x-ui-client-portal/archive/refs/tags/v0.1.zip"
 APP_DIR="flask_app"
@@ -29,15 +33,11 @@ wget $REPO_URL -O $APP_DIR/flask_app.zip
 unzip $APP_DIR/flask_app.zip -d $APP_DIR
 rm $APP_DIR/flask_app.zip
 
-# Change to the app directory
-cd $APP_DIR/your-flask-app-repo-main  # Adjust according to the structure of the extracted files
+# Navigate to the correct directory
+cd $APP_DIR/3x-ui-client-portal-0.1  # Adjust according to the structure of the extracted files
 
 # Update the app.py file with the user-provided port
 sed -i "s/5000/$PORT/" app.py
-
-# Update and install necessary packages
-sudo apt-get update
-sudo apt-get install -y python3 python3-pip python3-venv lsof curl unzip
 
 # Create and activate a virtual environment
 python3 -m venv venv
