@@ -22,7 +22,7 @@ sudo apt-get update
 sudo apt-get install -y python3 python3-pip python3-venv lsof curl unzip
 
 # Define the URL of the repository or zip file containing the Flask app
-REPO_URL="https://github.com/KingAshi/3x-ui-client-portal/archive/refs/tags/v0.2.zip"
+REPO_URL="https://github.com/KingAshi/3x-ui-client-portal/archive/refs/tags/v0.3.zip"
 APP_DIR="flask_app"
 
 # Create the directory for the Flask app files
@@ -34,7 +34,7 @@ unzip $APP_DIR/flask_app.zip -d $APP_DIR
 rm $APP_DIR/flask_app.zip
 
 # Navigate to the correct directory
-cd $APP_DIR/3x-ui-client-portal-0.2  # Adjust according to the structure of the extracted files
+cd $APP_DIR/3x-ui-client-portal-0.3  # Adjust according to the structure of the extracted files
 
 # Update the app.py file with the user-provided port
 sed -i "s/5000/$PORT/" app.py
