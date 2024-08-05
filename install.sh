@@ -15,7 +15,9 @@ is_valid_port() {
 while true; do
   read -p "Enter the port number to run the Flask app: " PORT
 
-  if is_port_in_use $PORT; then
+  if ! is_valid_port "$PORT"; then
+    echo "Invalid port number. Please enter a number between 1 and 65535."
+  elif is_port_in_use "$PORT"; then
     echo "Port $PORT is already in use by another program. Please choose a different port."
   else
     break
