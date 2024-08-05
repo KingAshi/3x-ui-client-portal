@@ -55,6 +55,42 @@ p {
     border-color: red;
 }
 
+.usage {
+    padding: 1px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.usage.offline {
+    background-color: #112123;
+    color: #2c9a95;
+    border-color: #2c9a95;
+}
+
+.usage.online {
+    background-color: #2a1215;
+    color: red;
+    border-color: red;
+}
+
+.expiry {
+    padding: 1px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.expiry.valid {
+    background-color: #112123;
+    color: #2c9a95;
+    border-color: #2c9a95;
+}
+
+.expiry.expired {
+    background-color: #2a1215;
+    color: red;
+    border-color: red;
+}
+
 a {
     text-decoration: none;
     color: #2c9a95;
