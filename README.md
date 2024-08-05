@@ -3,5 +3,5 @@
 ## Install & Upgrade
 
 ```
-bash <(curl -Ls https://github.com/KingAshi/3x-ui-client-portal/blob/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/KingAshi/3x-ui-client-portal/main/install.sh)
 ```
