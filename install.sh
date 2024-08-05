@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cur_dir=$(pwd)
 # Function to check if a port is in use
 is_port_in_use() {
   sudo lsof -i -P -n | grep ":$1 " > /dev/null
